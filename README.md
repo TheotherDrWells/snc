@@ -1,0 +1,11 @@
+Package: snc
+Type: Package
+Title: Strongest Neighbor Coherence
+Version: 0.1.0
+Author: Kevin E. Wells
+Maintainer: Kevin Wells <kevin.e.wells@usm.edu>
+Description: Computes Strongest Neighbor Coherence (SNC), a structural diagnostic that replaces Cronbach's alpha using top-k correlation structure.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3

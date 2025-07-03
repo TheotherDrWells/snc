@@ -1,0 +1,24 @@
+---
+title: "Using SNC"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Using SNC}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+library(snc)
+R <- matrix(c(
+  1.00, 0.60, 0.30,
+  0.60, 1.00, 0.50,
+  0.30, 0.50, 1.00
+), nrow = 3)
+
+rownames(R) <- colnames(R) <- c("Item1", "Item2", "Item3")
+snc(R)
+```
