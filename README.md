@@ -14,14 +14,9 @@ The `snc()` function takes a correlation matrix and returns:
 
 📄 Abstract
 
-Strongest Neighbor Coherence (SNC) is a structural diagnostic that replaces Cronbach’s alpha.
-SNC quantifies the degree to which each item aligns with its k most strongly correlated neighbors, using average absolute correlation values from a supplied item correlation matrix.
-This method does not assume unidimensionality or simple structure and is robust to overlapping constructs.
-The snc() function returns item-level, overall, and (optionally) factor-level coherence values.
-SNC can be used for scale auditing, short form construction, and as a modern replacement for alpha in structural diagnostics.
+Cronbach’s alpha remains the most widely used metric for internal consistency, yet it is well known to inflate with item count, fail under multidimensionality, and collapse in the presence of reversed items. I introduce Strongest Neighbor Coherence (SNC), a structure-aware, polarity-agnostic alternative that evaluates how well each item aligns with its top correlational neighbors. SNC operates entirely from a correlation matrix and requires no assumptions about scoring direction, unidimensionality, or model fit. I compare SNC and alpha across 81 fully crossed simulation conditions, varying number of latent factors, items per factor, reversals, and sample size. Results show that SNC remains stable and interpretable across all structures, while alpha varies dramatically, especially under factor complexity and short forms. Two real-world instruments demonstrate the practical contrast: the Rosenberg Self-Esteem Scale (Rosenberg, 1965), where alpha appears strong despite reversed items, and the DASS-21 (Lovibond & Lovibond, 1995), where SNC reveals clean subscale coherence despite an inflated total alpha. I propose SNC as a replacement for alpha in both simulation workflows and applied scale evaluation.
 
 This abstract is from the upcoming manuscript by Wells (2025)
 ## Citation
 
-This method is described in:
-> Wells (2025) <https://github.com/TheotherDrWells/snc>
+
