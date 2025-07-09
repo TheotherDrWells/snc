@@ -1,11 +1,18 @@
-Package: snc
-Type: Package
-Title: Strongest Neighbor Coherence
-Version: 0.1.0
-Author: Kevin E. Wells
-Maintainer: Kevin Wells <kevin.e.wells@usm.edu>
-Description: Computes Strongest Neighbor Coherence (SNC), a structural diagnostic that replaces Cronbach's alpha using top-k correlation structure.
-License: MIT + file LICENSE
-Encoding: UTF-8
-LazyData: true
-RoxygenNote: 7.2.3
+# Strongest Neighbor Coherence (SNC)
+
+**Strongest Neighbor Coherence (SNC)** is a structural diagnostic that replaces Cronbach’s alpha.  
+Instead of assuming unidimensionality, SNC computes the average absolute correlation between each item and its top-k most strongly correlated neighbors.
+
+This allows SNC to quantify local coherence even in multidimensional or overlapping item structures.
+
+## Method
+
+The `snc()` function takes a correlation matrix and returns:
+- The overall SNC value (mean top-k item coherence)
+- Item-level SNC values
+- Optional factor-level summaries (if a `factors` vector is provided)
+
+## Citation
+
+This method is described in:
+> Wells (2025) <https://github.com/TheotherDrWells/snc>
